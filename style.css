@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Founder;
+    src: url(/FoundersGroteskCondensed-Bold.woff2);
+}
+
+@font-face {
+    font-family: CardinalI;
+    src: url(/cardinalfruitweb-italic.woff2);
+}
+
+@font-face {
+    font-family: CardinalR;
+    src: url(/cardinalfruitweb-regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(221, 220, 223);
+    font-family: 'CardinalR', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(50, 50, 50);
+    margin: 0;
+}
+
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(170, 240, 169);
+}
+
+#top {
+    position: absolute;
+    /* top: -10%; */
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 146, 129);
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+#center {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    /* background-color: rgb(152, 219, 152); */
+    background-color: rgb(247, 239, 131);
+    overflow: hidden;
+}
+
+#main h1 {
+    font-size: 21vw;
+    font-family: Founder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#top-h {
+    bottom: 50%;
+}
+
+#bottom-h {
+    top: -1% !important;
+
+}
+
+/* Main content container */
+.content {
+    background-color: rgb(241, 234, 234);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Inside content styling */
+.inside-head {
+    color: rgb(94, 164, 255);
+    /* Main text color */
+    font-family: 'Founder', sans-serif;
+    /* Font family */
+    font-size: 9vw;
+    /* Responsive font size */
+    text-align: center;
+    /* Centers the text */
+    line-height: 1.2;
+    /* Adds spacing between lines */
+    text-shadow: 2px 2px 5px rgba(196, 162, 218, 0.418),
+        /* Shadow to create depth */
+        -2px -2px 5px rgb(81, 81, 104),
+        /* Another shadow direction for more depth */
+        3px 3px 10px rgba(112, 112, 112, 0.486);
+    /* Larger shadow for a stronger 3D effect */
+}
+
+
+/* Subtitle styling */
+.inside-subtitle {
+    font-family: 'CardinalR', sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    font-weight: normal;
+}
